@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<HTML>
+    <TITLE>{% block title%}{% endblock %}</TITLE>
+<HEAD>
+</HEAD>
+<BODY>
+<H1>Header in the base template</H1>
+{% block content %}This is in the base and won't show up unless I use the
+<B>super function</B> in the child.<P>{% endblock %}
+<H1>Trailer in the base template</H1>
+</BODY>
+</HTML>

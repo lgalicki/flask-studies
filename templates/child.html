@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}Title defined in the child template{% endblock %}
+{% block content %}
+{{ super() }}
+This is in the body of the child template.<P>
+{% include 'included.html' %}
+{% endblock %}

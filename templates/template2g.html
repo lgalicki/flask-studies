@@ -1,0 +1,15 @@
+<HTML>
+<HEAD>
+    <TITLE>Template 2 - GETting information</TITLE>
+</HEAD>
+<BODY>
+    Tell us your name: 
+    <FORM METHOD="POST" ACTION="/template2">
+        <INPUT TYPE="TEXT" NAME="name"><BR>
+        <INPUT TYPE="CHECKBOX" NAME="happy" CHECKED>Leave it checked if you're happy.<BR>
+        <INPUT TYPE="SUBMIT" VALUE="Confirm">
+    </FORM>
+    <P>
+    <IMG SRC="{{ url_for('static', filename='/img/smile.png') }}">
+</BODY>
+</HTML>

@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+    <TITLE>Database with Flask</TITLE>
+</HEAD>
+<BODY>
+    Users in the database:<BR>
+    {% for item in items %}
+    The id is <B> {{ item.id }}</B>, the name is <B>{{ item.name }}</B> and the location is <B>{{ item.location}}</B>.<BR>
+    {% endfor %}
+    <BR><BR>
+    Insert more users: 
+    <FORM METHOD="POST" ACTION="/">
+        Name: <INPUT TYPE="TEXT" NAME="name"><BR>
+        Location: <INPUT TYPE="TEXT" NAME="location"><BR>
+        <INPUT TYPE="SUBMIT" VALUE="Insert">
+    </FORM>
+</BODY>
+</HTML>

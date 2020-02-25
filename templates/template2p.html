@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+    <TITLE>Template 2 - POSTed information</TITLE>
+</HEAD>
+<BODY>
+    Your name is {{ name }}.<P>
+    
+    {% if happy %}
+    You are happy! <B>:)</B>
+    {% else %}
+    You are sad! <B>:(</B>
+    {% endif %}
+    <P>
+    {% for x in my_list %}
+    <B>{{ x }}</B> is an item in your list.<BR>
+    {% endfor %}
+    <P>
+    {% for x in dict_list %}
+    <B>{{ x.name }}</B> is a name in your dictionaries.<BR>
+    {% endfor %}
+</BODY>
+</HTML>
