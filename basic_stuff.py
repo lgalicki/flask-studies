@@ -46,7 +46,7 @@ def post_get():
 
 # Here we have an example of how we can receive a single parameter through the
 # URL. We must access it as /parm/<Your_name_here>. The type of the variable is
-# not obligatory, but, if define it, returns 404 if we specify a value which
+# not obligatory, but, if we define it, 404 is returned if we specify a value which
 # doesn't fit it. The first decorator, if defined, prevents 404 in case the
 # argument is not specified. Its methods and argument name must be exactly the
 # same as the decorator right below it.
