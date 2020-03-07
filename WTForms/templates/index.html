@@ -1,0 +1,36 @@
+{% from "_renderfield.html" import renderfield %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+</head>
+<body>
+	<form action="/" method="POST">
+		{{ form.csrf_token }}
+		{{ renderfield(form.username)}}
+		{{ renderfield(form.password) }}
+		{{ renderfield(form.age) }}
+		{{ renderfield(form.fav_day) }}
+		{{ renderfield(form.email) }}
+		{{ renderfield(form.first_name) }}
+		{{ renderfield(form.last_name) }}
+		{{ form.checkbox.label }}
+		{{ form.checkbox }}
+		{{ renderfield(form.home_phone) }}
+		{{ renderfield(form.work_phone) }}
+		{% for dog in form.dogs %}
+			{{ renderfield(dog) }}
+		{% endfor %}
+		{% if form.unused %}
+			{{ renderfield(form.unused)}}
+		{% endif %}
+		{{ form.recaptcha }}
+		<ul>
+			{% for error in form.recaptcha.errors %}
+				<li style="color:red;">{{ error }}</li>
+			{% endfor %}
+		</ul>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

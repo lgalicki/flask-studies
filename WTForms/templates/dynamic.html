@@ -1,0 +1,16 @@
+{% from "_renderfield.html" import renderfield %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+</head>
+<body>
+	<form action="/dynamic" method="POST">
+		{{ form.csrf_token }}
+		{% for name in names %}
+			{{ renderfield(form[name]) }}
+		{% endfor %}
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

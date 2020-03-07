@@ -1,0 +1,19 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title%}
+WTForms example!
+{% endblock %}
+
+{% block body %}
+<div class="container">
+	<form method="POST", action="{{ url_for('bootstrap') }}">
+		<dl>
+			{{ form.csrf_token }}
+			{{ wtf.form_field(form.username) }}
+			{{ wtf.form_field(form.password) }}
+			<input type="submit" value="Go!">
+		</dl>
+	</form>
+</div>
+{% endblock %}  
