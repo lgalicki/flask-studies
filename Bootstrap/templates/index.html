@@ -1,0 +1,12 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+<h1>This is inside the content block!</h1>
+<p>This is how you use blocks in Flask-Bootstrap</p>
+{% endblock %}
+
+{% block title%}Flask-Bootstrap example{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script source="script.js"></script>
+{% endblock %}
