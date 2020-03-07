@@ -1,3 +1,4 @@
 *spyproject*
 *__pycache__*
 mysql_credentials.py
+mail_credentials.py
