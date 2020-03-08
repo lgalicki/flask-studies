@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flask Uploads example</title>
+</head>
+<body>
+	<form method="POST" action="{{ url_for('upload') }}" enctype="multipart/form-data">
+		<input type="file" name="thefile">
+		<input type="submit" name="Upload">
+	</form>
+</body>
+</html>
