@@ -1,0 +1,18 @@
+# packages in environment at /home/luciano/anaconda3/envs/flask_babel:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+babel                     2.8.0                      py_0  
+ca-certificates           2020.1.1                      0  
+certifi                   2019.11.28               py37_0  
+flask-babel               0.12.2                     py_0  
+itsdangerous              1.1.0                    py37_0  
+libedit                   3.1.20181209         hc058e9b_0  
+markupsafe                1.1.1            py37h7b6447c_0  
+ncurses                   6.2                  he6710b0_0  
+openssl                   1.1.1d               h7b6447c_4  
+readline                  7.0                  h7b6447c_5  
+setuptools                46.0.0                   py37_0  
+sqlite                    3.31.1               h7b6447c_0  
+werkzeug                  0.16.1                     py_0  
+wheel                     0.34.2                   py37_0  
