@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flask SocketIO example</title>
+</head>
+<body>
+	<div>
+		<input type="text" id="message">
+		<button id="send">Send</button>
+	</div>
+
+	<div>
+		<input type="text" id="username">
+		<button id="send_username">Send Username</button>
+	</div>
+
+	<div>
+		Send to:<input type="text" id="send_to_username"><br>
+		Message:<input type="text" id="private_message">
+		<button id="send_private_message">Send private message</button>
+	</div>
+
+	<div>
+		Room to join:<input type="text" id="room_to_join">
+		<button id="join_room">Join Room</button>
+		<button id="leave_room">Leave Room</button>
+	</div>
+	<div>
+		<button id="disconnect">Disconnect</button>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js" integrity="sha256-OgiHfllOBEOiWQ2OcBsDncRG2k7QBW9Rs1dB7MH2N2s=" crossorigin="anonymous"></script>
+	<script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
