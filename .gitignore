@@ -3,3 +3,4 @@
 mysql_credentials.py
 mail_credentials.py
 mail.cfg
+api_credentials.py
